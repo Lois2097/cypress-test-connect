@@ -1,0 +1,120 @@
+import { ReportTransactionChecker} from '../../../locators/reports'
+
+export const ReportTransactionCheckerPage = {
+  // Texts
+  reportsTransaction: () => cy.get(ReportTransactionChecker.reportsTransaction),
+
+  // Buttons
+  previousPageButton: () => cy.get(ReportTransactionChecker.previousPage),
+  generateReportButton: () => cy.get(ReportTransactionChecker.generateReport),
+
+  // Input Box
+  originator: () => cy.get(ReportTransactionChecker.originator),
+  clientName: () => cy.get(ReportTransactionChecker.clientName),
+  mnemonic: () => cy.get(ReportTransactionChecker.mnemonic),
+  supersededRemarks: () => cy.get(ReportTransactionChecker.supersededRemarks),
+  moseRef: () => cy.get(ReportTransactionChecker.moseRef),
+
+  // Dropdown
+  reportType: () => cy.get(ReportTransactionChecker.reportType),
+  datePicker: () => cy.get(ReportTransactionChecker.datePicker),
+  product: () => cy.get(ReportTransactionChecker.product),
+  status: () => cy.get(ReportTransactionChecker.status),
+
+  // Options
+  listOfTransactionCreated: () => cy.get(ReportTransactionChecker.listOfTransactionsCreated),
+  listOfDocumentsRejectedByClient: () => cy.get(ReportTransactionChecker.listOfDocumentsRejectedByClient),
+  extractableReportBasedValueOnSearchFilter: () => cy.get(ReportTransactionChecker.extractableReportBasedValueOnSearchFilter),
+  listOfTransactionsCompletedForAParticularDate: () => cy.get(ReportTransactionChecker.listOfTransactionsCompletedForAParticularDate),
+  listOfTransactionsWithPendingApprovalDocuments: () => cy.get(ReportTransactionChecker.listOfTransactionsWithPendingApprovalDocuments),
+  assetSwap: () => cy.get(ReportTransactionChecker.assetSwap),
+  creditDefaultSwap: () => cy.get(ReportTransactionChecker.creditDefaultSwap),
+  crossCurrencySwap: () => cy.get(ReportTransactionChecker.crossCurrencySwap),
+  depositPlusFxAgainstPhp: () => cy.get(ReportTransactionChecker.depositPlusFxAgainstPhp),
+  depositPlusThirdCurrency: () => cy.get(ReportTransactionChecker.depositPlusThirdCurrency),
+  derivativeTermsheetAndRdsOnly: () => cy.get(ReportTransactionChecker.derivativeTermsheetAndRdsOnly),
+  derivativeWithOrderAtExpiry: () => cy.get(ReportTransactionChecker.derivativeWithOrderAtExpiry),
+  fxForward: () => cy.get(ReportTransactionChecker.fxForward),
+  fxOption: () => cy.get(ReportTransactionChecker.fxOption),
+  fxSpot: () => cy.get(ReportTransactionChecker.fxSpot),
+  fxSpotAndFixedIncome: () => cy.get(ReportTransactionChecker.fxSpotAndFixedIncome),
+  fxSwap: () => cy.get(ReportTransactionChecker.fxSwap),
+  fixedIncome: () => cy.get(ReportTransactionChecker.fixedIncome),
+  interestRateSwap: () => cy.get(ReportTransactionChecker.interestRateSwap),
+  leverageForInvestors: () => cy.get(ReportTransactionChecker.leverageForInvestors),
+  mbChinaTimeDeposit: () => cy.get(ReportTransactionChecker.mbChinaTimeDeposit),
+  nonDeliverableForward: () => cy.get(ReportTransactionChecker.nonDeliverableForward),
+  nonDeliverableSwap: () => cy.get(ReportTransactionChecker.nonDeliverableSwap),
+  structuredProductGpnBookBuildingOrder: () => cy.get(ReportTransactionChecker.structuredProductGpnBookBuildingOrder),
+  structuredProductGlobalPesoNote: () => cy.get(ReportTransactionChecker.structuredProductGlobalPesoNote),
+  structuredProducts: () => cy.get(ReportTransactionChecker.structuredProducts),
+  treasuryTimeDeposit: () => cy.get(ReportTransactionChecker.treasuryTimeDeposit),
+  unwindAssetSwap: () => cy.get(ReportTransactionChecker.unwindAssetSwap),
+  unwindDepositPlus: () => cy.get(ReportTransactionChecker.unwindDepositPlus),
+  unwindFixedIncomeAndStandaloneDerivative: () => cy.get(ReportTransactionChecker.unwindFixedIncomeAndStandaloneDerivative),
+  unwindStructuredProduct: () => cy.get(ReportTransactionChecker.unwindStructuredProduct),
+  pendingApprovalOption: () => cy.get(ReportTransactionChecker.pendingApproval),
+  forProcessingOption: () => cy.get(ReportTransactionChecker.forProcessing),
+  cancelledOption: () => cy.get(ReportTransactionChecker.cancelled),
+  postDealRejectedOption: () => cy.get(ReportTransactionChecker.postDealRejected),
+  completedWithConfoOption: () => cy.get(ReportTransactionChecker.completedWithConfo),
+  completedOption: () => cy.get(ReportTransactionChecker.completed),
+
+  //+--------------------------------------------------------------------+
+  //|                                                                    |
+  //|                       ACTION METHODS                               |
+  //|                                                                    |
+  //+--------------------------------------------------------------------+
+
+  clickPreviousPageButton: () => cy.get(ReportTransactionChecker.previousPage).click(),
+  clickGenerateReportButton: () => cy.get(ReportTransactionChecker.generateReport).click(),
+
+  typeOriginator: (input: string) => cy.get(ReportTransactionChecker.originator).type(input),
+  typeClientName: (input: string) => cy.get(ReportTransactionChecker.clientName).type(input),
+  typeMnemonic: (input: string) => cy.get(ReportTransactionChecker.mnemonic).type(input),
+  typeSupersededRemarks: (input: string) => cy.get(ReportTransactionChecker.supersededRemarks).type(input),
+  typeMoseRef: (input: string) => cy.get(ReportTransactionChecker.moseRef).type(input),
+
+  clickReportType: () => cy.get(ReportTransactionChecker.reportType).click(),
+  clickDatePicker: () => cy.get(ReportTransactionChecker.datePicker).click(),
+  clickProduct: () => cy.get(ReportTransactionChecker.product).click(),
+  clickStatus: () => cy.get(ReportTransactionChecker.status).click(),
+
+  clickListOfTransactionCreated: () => cy.get(ReportTransactionChecker.listOfTransactionsCreated).click(),
+  clickListOfDocumentsRejectedByClient: () => cy.get(ReportTransactionChecker.listOfDocumentsRejectedByClient).click(),
+  clickExtractableReportBasedValueOnSearchFilter: () => cy.get(ReportTransactionChecker.extractableReportBasedValueOnSearchFilter).click(),
+  clickListOfTransactionsCompletedForAParticularDate: () => cy.get(ReportTransactionChecker.listOfTransactionsCompletedForAParticularDate).click(),
+  clickListOfTransactionsWithPendingApprovalDocuments: () => cy.get(ReportTransactionChecker.listOfTransactionsWithPendingApprovalDocuments).click(),
+  clickAssetSwap: () => cy.get(ReportTransactionChecker.assetSwap).click(),
+  clickCreditDefaultSwap: () => cy.get(ReportTransactionChecker.creditDefaultSwap).click(),
+  clickCrossCurrencySwap: () => cy.get(ReportTransactionChecker.crossCurrencySwap).click(),
+  clickDepositPlusFxAgainstPhp: () => cy.get(ReportTransactionChecker.depositPlusFxAgainstPhp).click(),
+  clickDepositPlusThirdCurrency: () => cy.get(ReportTransactionChecker.depositPlusThirdCurrency).click(),
+  clickDerivativeTermsheetAndRdsOnly: () => cy.get(ReportTransactionChecker.derivativeTermsheetAndRdsOnly).click(),
+  clickDerivativeWithOrderAtExpiry: () => cy.get(ReportTransactionChecker.derivativeWithOrderAtExpiry).click(),
+  clickFxForward: () => cy.get(ReportTransactionChecker.fxForward).click(),
+  clickFxOption: () => cy.get(ReportTransactionChecker.fxOption).click(),
+  clickFxSpot: () => cy.get(ReportTransactionChecker.fxSpot).click(),
+  clickFxSpotAndFixedIncome: () => cy.get(ReportTransactionChecker.fxSpotAndFixedIncome).click(),
+  clickFxSwap: () => cy.get(ReportTransactionChecker.fxSwap).click(),
+  clickFixedIncome: () => cy.get(ReportTransactionChecker.fixedIncome).click(),
+  clickInterestRateSwap: () => cy.get(ReportTransactionChecker.interestRateSwap).click(),
+  clickLeverageForInvestors: () => cy.get(ReportTransactionChecker.leverageForInvestors).click(),
+  clickMbChinaTimeDeposit: () => cy.get(ReportTransactionChecker.mbChinaTimeDeposit).click(),
+  clickNonDeliverableForward: () => cy.get(ReportTransactionChecker.nonDeliverableForward).click(),
+  clickNonDeliverableSwap: () => cy.get(ReportTransactionChecker.nonDeliverableSwap).click(),
+  clickStructuredProductGpnBookBuildingOrder: () => cy.get(ReportTransactionChecker.structuredProductGpnBookBuildingOrder).click(),
+  clickStructuredProductGlobalPesoNote: () => cy.get(ReportTransactionChecker.structuredProductGlobalPesoNote).click(),
+  clickStructuredProducts: () => cy.get(ReportTransactionChecker.structuredProducts).click(),
+  clickTtreasuryTimeDeposit: () => cy.get(ReportTransactionChecker.treasuryTimeDeposit).click(),
+  clickUnwindAssetSwap: () => cy.get(ReportTransactionChecker.unwindAssetSwap).click(),
+  clickUnwindDepositPlus: () => cy.get(ReportTransactionChecker.unwindDepositPlus).click(),
+  clickUnwindFixedIncomeAndStandaloneDerivative: () => cy.get(ReportTransactionChecker.unwindFixedIncomeAndStandaloneDerivative).click(),
+  clickUnwindStructuredProduct: () => cy.get(ReportTransactionChecker.unwindStructuredProduct).click(),
+  clickPendingApprovalOption: () => cy.get(ReportTransactionChecker.pendingApproval).click(),
+  clickForProcessingOption: () => cy.get(ReportTransactionChecker.forProcessing).click(),
+  clickCancelledOption: () => cy.get(ReportTransactionChecker.cancelled).click(),
+  clickPostDealRejectedOption: () => cy.get(ReportTransactionChecker.postDealRejected).click(),
+  clickCompletedWithConfoOption: () => cy.get(ReportTransactionChecker.completedWithConfo).click(),
+  clickCompletedOption: () => cy.get(ReportTransactionChecker.completed).click(),
+}

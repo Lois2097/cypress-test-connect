@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #1)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:06:20",
+    "endTime": "Oct 22, 2025, 14:06:31"
+  },
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #2)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:06:31",
+    "endTime": "Oct 22, 2025, 14:06:40"
+  },
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #1)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:13:13",
+    "endTime": "Oct 22, 2025, 14:13:28"
+  },
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #2)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:13:28",
+    "endTime": "Oct 22, 2025, 14:13:39"
+  },
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #1)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:26:07",
+    "endTime": "Oct 22, 2025, 14:26:23"
+  },
+  {
+    "feature": "New Transaction Module",
+    "test": "Assert fields and buttons in Corporate Accounts page (example #2)",
+    "totalAssertions": 38,
+    "passedAssertions": 38,
+    "skippedAssertions": 0,
+    "failedAssertions": 0,
+    "startTime": "Oct 22, 2025, 14:26:23",
+    "endTime": "Oct 22, 2025, 14:26:35"
+  }
+]
